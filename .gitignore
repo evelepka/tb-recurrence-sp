@@ -1,0 +1,41 @@
+# Data — NEVER commit patient-level data
+*.dta
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.sav
+*.rds
+*.rdata
+*.RData
+
+# Stata
+*.gph
+*.smcl
+*.log
+*.stsem
+
+# R
+.Rhistory
+.Rapp.history
+.RData
+.Ruserdata
+.Rproj.user/
+*.Rproj
+
+# RMarkdown / knitr outputs
+*_files/
+*_cache/
+*.html
+*.pdf
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Output artifacts
+output/
+figures/
+tables/
