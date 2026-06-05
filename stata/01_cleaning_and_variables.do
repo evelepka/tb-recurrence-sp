@@ -1,4 +1,4 @@
-import delimited "/Users/isadorasalles/Downloads/Final table_correct dates2.csv"
+import delimited "<DATA_DIR>/Final table_correct dates2.csv"
 
 
 *******************************************************
@@ -1903,7 +1903,7 @@ label values exclude exclude_label
 
 
 
-save "/Users/isadorasalles/Downloads/evelyn_cleandataset_0320.dta"
+save "<DATA_DIR>/evelyn_cleandataset_0320.dta"
 
 ************************************************************
 
@@ -1991,7 +1991,7 @@ drop in 212618
 
 * 7 duplicate notifications dropped
 
-save "/Users/isadorasalles/Downloads/evelyn_cleandataset_0324.dta"
+save "<DATA_DIR>/evelyn_cleandataset_0324.dta"
 
 *******************
 
@@ -2712,7 +2712,7 @@ label values exclude exclude_label
 *                                  Total |     66,276      100.00
 
 
-save "/Users/isadorasalles/Downloads/evelyn_cleandataset_0324.dta", replace
+save "<DATA_DIR>/evelyn_cleandataset_0324.dta", replace
 
 
 
@@ -2793,7 +2793,7 @@ drop if ever_pop_at_risk==0
 
 ************************************************************
 
-save "/Users/isadorasalles/Downloads/evelyn_cleandataset_atriskpopulation.dta"
+save "<DATA_DIR>/evelyn_cleandataset_atriskpopulation.dta"
 
 
 
@@ -2918,7 +2918,7 @@ gen time_to_event = event_date - curedate_TB1
 . count if time_to_event!=.
 *  12,238 - Perfect this aligns with the number expected
 
-save "/Users/isadorasalles/Downloads/evelyn_cleandataset_atriskpopulation.dta", replace
+save "<DATA_DIR>/evelyn_cleandataset_atriskpopulation.dta", replace
 
 
 
@@ -2971,7 +2971,7 @@ replace event_type = 0 if cure_TBepisode1_flag==1 & ever_had_primaryrecurr==0 & 
 
 
 
-save "/Users/isadorasalles/Downloads/evelyn_cleandataset_atriskpopulation.dta", replace
+save "<DATA_DIR>/evelyn_cleandataset_atriskpopulation.dta", replace
 
 
 
@@ -3045,7 +3045,7 @@ codebook startTB1_to_cureTB1
 
 
 
-save "/Users/isadorasalles/Downloads/evelyn_cleandataset_atriskpopulation.dta", replace
+save "<DATA_DIR>/evelyn_cleandataset_atriskpopulation.dta", replace
 
 
 **********************************
@@ -3069,7 +3069,7 @@ drop if event_type==0 & curedate_TB1==.
 . count if event_type==2 & curedate_TB1==.
 *  0
 
-save "/Users/isadorasalles/Downloads/evelyn_cleandataset_atriskpopulation.dta", replace
+save "<DATA_DIR>/evelyn_cleandataset_atriskpopulation.dta", replace
 
 . . count if event_type!=. & startTB1_to_cureTB1==.
 *  0. OK so everyone who is in our survival analysis has a duration of 1st TB episode
@@ -3234,7 +3234,7 @@ label values TB1_duration tb1_duration_label
 *                       Total |    160,095      100.00
 
 
-save "/Users/isadorasalles/Downloads/evelyn_cleandataset_atriskpopulation.dta", replace
+save "<DATA_DIR>/evelyn_cleandataset_atriskpopulation.dta", replace
 
 
 
@@ -3300,7 +3300,7 @@ label variable retreatment_TB1 "TB Episode 1 had Retreatments prior to cure"
 
 
 
-save "/Users/isadorasalles/Downloads/evelyn_cleandataset_atriskpopulation.dta", replace
+save "<DATA_DIR>/evelyn_cleandataset_atriskpopulation.dta", replace
 
 
 
@@ -3481,7 +3481,7 @@ drop if (startTB1_to_cureTB1>=150 & startTB1_to_cureTB1<180) & event_type!=. & (
 * n= 4386 observations dropped due to treatment duration < 6 months
 
 
-save "/Users/isadorasalles/Downloads/evelyn_cleandataset_atriskpopulation_dropped<6monthtrtduration.dta"
+save "<DATA_DIR>/evelyn_cleandataset_atriskpopulation_dropped<6monthtrtduration.dta"
 
 
 
@@ -3555,7 +3555,7 @@ label values event_type event_type_label
 
 
 
-save "/Users/isadorasalles/Downloads/evelyn_cleandataset_atriskpopulation_dropped<6monthtrtduration.dta", replace
+save "<DATA_DIR>/evelyn_cleandataset_atriskpopulation_dropped<6monthtrtduration.dta", replace
 
 
 
@@ -3874,7 +3874,7 @@ drop if startTB1_to_cureTB1>913
 
 **********************************
 
-save "/Users/isadorasalles/Downloads/evelyn_survivalanalysis_final_040725.dta"
+save "<DATA_DIR>/evelyn_survivalanalysis_final_040725.dta"
 
 
 
@@ -3912,7 +3912,7 @@ save "/Users/isadorasalles/Downloads/evelyn_survivalanalysis_final_040725.dta"
 
 
 
-save "/Users/isadorasalles/Downloads/evelyn_survivalanalysis_final_040725.dta", replace
+save "<DATA_DIR>/evelyn_survivalanalysis_final_040725.dta", replace
 
 
 
@@ -3978,7 +3978,7 @@ save "/Users/isadorasalles/Downloads/evelyn_survivalanalysis_final_040725.dta", 
 	
 	
 	
-save "/Users/isadorasalles/Downloads/evelyn_survivalanalysis_final_040725.dta", replace
+save "<DATA_DIR>/evelyn_survivalanalysis_final_040725.dta", replace
 
 
 
@@ -4332,7 +4332,7 @@ if less than 10 % of missing values, but if more than 30 % should be we
 ********
 
 
-save "/Users/isadorasalles/Downloads/evelyn_cleandataset_survivalanalysis.dta", replace
+save "<DATA_DIR>/evelyn_cleandataset_survivalanalysis.dta", replace
 
 
 

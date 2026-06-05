@@ -30,7 +30,7 @@ Patient-level data are **not** included in this repository. The cohort was built
 - **TBweb** — São Paulo state tuberculosis surveillance system (São Paulo State Department of Health)
 - **SIM** — Sistema de Informação sobre Mortalidade (Brazilian national mortality database)
 
-Access requires authorization from the data custodians. Hard-coded paths in the scripts point to the original analysts' local machines and need to be updated before re-running.
+Access requires authorization from the data custodians. The cleaning script uses a `<DATA_DIR>` placeholder for the input/output data folder — replace with your local path before running.
 
 ## Software
 
