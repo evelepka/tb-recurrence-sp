@@ -39,8 +39,8 @@ Access requires authorization from the data custodians. The cleaning script uses
 
 ## Software
 
-- Stata 17 or later
-- R ≥ 4.2 with `cmprsk`, `survival`, `dplyr`, `ggplot2`
+- Stata 19.5 (StataCorp, College Station, TX, USA)
+- R 4.5.0 with `cmprsk`, `survival`, `prodlim`, `riskRegression`, `tidyverse`, `patchwork`
 
 ## Citation
 
